@@ -1,20 +1,13 @@
 import { Link, Route } from "react-router-dom";
-import { Switch } from "react-router-dom/cjs/react-router-dom.min";
-import CreateConference from "./CreateConference";
+
 const Admin = () => {
   return (
     <div>
-      <div>
-        <Link to={"admin/createconference"}>Create Conference</Link>
-      </div>
-      <hr />
-      <div>
-        <Switch>
-          <Route path={"createconference"}>
-            <CreateConference />
-          </Route>
-        </Switch>
-      </div>
+      <Link to={"admin/createconference"}>Create Conference</Link>
+      <br></br>
+      <Link to={"admin/createtalk"}>Create Talk</Link>
+      <br />
+      <Link to={"admin/createspeaker"}> Create Speaker </Link>
     </div>
   );
 };
