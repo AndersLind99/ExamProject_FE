@@ -19,6 +19,7 @@ import FindBook from "./componet/FindBook";
 import LogIn from "./componet/login/LogIn";
 import facade from "./apiFacade";
 import LoggedIn from "./componet/login/LoggedIn";
+import Conference from "./componet/Conference";
 
 function App(props) {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -50,6 +51,10 @@ function App(props) {
         <Route path="/company">
           <Company />
         </Route>
+        <Route path="/conference">
+          <Conference />
+        </Route>
+
         <route path="/login">
           <div>
             {!loggedIn ? (

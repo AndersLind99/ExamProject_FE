@@ -5,10 +5,6 @@ import LoggedIn from "./login/LoggedIn";
 import LogIn from "./login/LogIn";
 
 function Header() {
-
-  
-
-
   return (
     <div>
       <ul className="header">
@@ -35,6 +31,11 @@ function Header() {
         <li>
           <NavLink activeClassName="active" to="/company">
             Company
+          </NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/conference">
+            conference
           </NavLink>
         </li>
         <li>
