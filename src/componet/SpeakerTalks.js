@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import facade from "../apiFacade";
 
-const ConferenceTalks = (props) => {
+const SpeakerTalks = (props) => {
   const [talks, setTalks] = useState([]);
 
   useEffect((id) => {
     fetch(
-      "http://localhost:8080/ExamProject/api/conference/" + props.conferenceId,
+      "http://localhost:8080/ExamProject/api/speaker/" + props.speakerId,
       facade.makeOptions("GET", true)
     )
       .then((response) => response.json())
@@ -31,4 +31,4 @@ const ConferenceTalks = (props) => {
   );
 };
 
-export default ConferenceTalks;
+export default SpeakerTalks;

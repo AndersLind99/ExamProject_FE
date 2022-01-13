@@ -34,6 +34,12 @@ function Header() {
           </NavLink>
         </li>
         <li>
+<NavLink activeClassName="active" to="/speaker">
+  speakers
+</NavLink>
+
+        </li>
+        <li>
           <NavLink activeClassName="active" to="/conference">
             conference
           </NavLink>

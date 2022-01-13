@@ -20,6 +20,8 @@ import LogIn from "./componet/login/LogIn";
 import facade from "./apiFacade";
 import LoggedIn from "./componet/login/LoggedIn";
 import Conference from "./componet/Conference";
+import SpeakerTalks from "./componet/SpeakerTalks";
+import Speaker from "./componet/Speaker";
 
 function App(props) {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -50,6 +52,9 @@ function App(props) {
         </Route>
         <Route path="/company">
           <Company />
+        </Route>
+        <Route path="/speaker">
+          <Speaker />
         </Route>
         <Route path="/conference">
           <Conference />
