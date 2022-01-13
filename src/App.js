@@ -22,6 +22,8 @@ import LoggedIn from "./componet/login/LoggedIn";
 import Conference from "./componet/Conference";
 import SpeakerTalks from "./componet/SpeakerTalks";
 import Speaker from "./componet/Speaker";
+import Admin from "./componet/Admin";
+import CreateConference from "./componet/CreateConference";
 
 function App(props) {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -59,6 +61,12 @@ function App(props) {
         <Route path="/conference">
           <Conference />
         </Route>
+        <Route path="/admin/createconference">
+          <CreateConference/>
+        </Route>
+        <Route path="/admin">
+          <Admin />
+        </Route>
 
         <route path="/login">
           <div>
@@ -72,6 +80,7 @@ function App(props) {
             )}
           </div>
         </route>
+
         <Route path="*">
           <NoMatch />
         </Route>

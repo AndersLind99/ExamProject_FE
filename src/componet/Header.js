@@ -34,10 +34,9 @@ function Header() {
           </NavLink>
         </li>
         <li>
-<NavLink activeClassName="active" to="/speaker">
-  speakers
-</NavLink>
-
+          <NavLink activeClassName="active" to="/speaker">
+            speakers
+          </NavLink>
         </li>
         <li>
           <NavLink activeClassName="active" to="/conference">
@@ -47,6 +46,11 @@ function Header() {
         <li>
           <NavLink activeClassName="active" to="/login">
             Login
+          </NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/admin">
+            Admin
           </NavLink>
         </li>
       </ul>
