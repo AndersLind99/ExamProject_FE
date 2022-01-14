@@ -4,6 +4,7 @@ const Admin = () => {
   return (
     <div>
       <Link to={"admin/createconference"}>Create Conference</Link>
+      <Link to={"admin/editconference/"}>edit Conference</Link>
       <br></br>
       <Link to={"admin/createtalk"}>Create Talk</Link>
       <br />

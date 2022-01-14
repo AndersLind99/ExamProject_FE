@@ -25,6 +25,8 @@ import Admin from "./componet/Admin";
 import CreateConference from "./componet/CreateConference";
 import CreateTalk from "./componet/CreateTalk";
 import CreateSpeaker from "./componet/CreateSpeaker";
+import EditConference from "./componet/EditConference";
+import Editing from "./componet/Editing";
 
 function App(props) {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -68,6 +70,13 @@ function App(props) {
         <Route path="/admin/createspeaker">
           <CreateSpeaker />
         </Route>
+        <Route path="/admin/editConference">
+          <EditConference />
+        </Route>
+        <Route path={"/editing"}>
+          <Editing />
+        </Route>
+
         <Route path="/admin/createconference">
           <CreateConference />
         </Route>

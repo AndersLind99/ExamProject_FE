@@ -1,4 +1,4 @@
-const URL = "http://localhost:8080/ExamProject";
+const URL = "https://anderslind99.com/ExamProject_BE";
 
 function handleHttpErrors(res) {
   if (!res.ok) {
