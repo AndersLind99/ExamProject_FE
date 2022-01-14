@@ -9,7 +9,7 @@ const Conference = () => {
 
   useEffect(() => {
     fetch(
-      URL = "/api/conference/all",
+      URL + "/api/conference/all",
       facade.makeOptions("GET", true)
     )
       .then((response) => response.json())
