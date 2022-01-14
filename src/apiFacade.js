@@ -1,4 +1,4 @@
-const URL = "https://anderslind99.com/ExamProject_BE";
+export const URL = "https://anderslind99.com/ExamProject_BE";
 
 function handleHttpErrors(res) {
   if (!res.ok) {

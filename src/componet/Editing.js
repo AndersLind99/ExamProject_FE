@@ -1,6 +1,7 @@
 import { useState } from "react/cjs/react.development";
 import facade from "../apiFacade";
 import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
+import { URL } from "../apiFacade";
 
 const Editing = (props) => {
   const location = useLocation();
@@ -19,7 +20,7 @@ const Editing = (props) => {
     evt.preventDefault();
 
     fetch(
-      "http://localhost:8080/ExamProject/api/conference/update",
+      URL + "/api/conference/update",
       facade.makeOptions("PUT", true, conference)
     ).then((Response) => Response.json());
   };

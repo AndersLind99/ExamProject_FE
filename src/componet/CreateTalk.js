@@ -1,5 +1,6 @@
 import { useState } from "react";
 import facade from "../apiFacade";
+import { URL } from "../apiFacade";
 
 function CreateTalk() {
   const [talk, setTalk] = useState({
@@ -11,7 +12,7 @@ function CreateTalk() {
     evt.preventDefault();
 
     fetch(
-      "http://localhost:8080/ExamProject/api/talk/create",
+      URL + "/api/talk/create",
       facade.makeOptions("POST", true, talk)
     ).then((Response) => Response.json());
   };

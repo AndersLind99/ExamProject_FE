@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import facade from "../apiFacade";
-
+import { URL } from "../apiFacade";
 
 const ConferenceTalks = (props) => {
   const [talks, setTalks] = useState([]);
 
   useEffect((id) => {
     fetch(
-      "http://localhost:8080/ExamProject/api/conference/" + props.conferenceId,
+      URL + "/api/conference/" + props.conferenceId,
       facade.makeOptions("GET", true)
     )
       .then((response) => response.json())

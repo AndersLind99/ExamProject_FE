@@ -1,9 +1,9 @@
-import { useEffect } from "react";
 import facade from "../apiFacade";
+import { URL } from "../apiFacade";
 
 function ConferenceDelete(props) {
   fetch(
-    "http://localhost:8080/ExamProject/api/conference/remove/" + props,
+    URL + "/api/conference/remove/" + props,
     facade.makeOptions("DELETE", true)
   ).then((response) => response.json());
 }

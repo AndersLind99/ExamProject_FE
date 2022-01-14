@@ -1,5 +1,6 @@
 import { useState } from "react";
 import facade from "../apiFacade";
+import { URL } from "../apiFacade";
 
 function CreateSpeaker() {
   const [speaker, setSpeaker] = useState({
@@ -12,7 +13,7 @@ function CreateSpeaker() {
     evt.preventDefault();
 
     fetch(
-      "http://localhost:8080/ExamProject/api/speaker/create",
+      URL + "/api/speaker/create",
       facade.makeOptions("POST", true, speaker)
     ).then((Response) => Response.json());
   };

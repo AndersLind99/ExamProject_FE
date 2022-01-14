@@ -1,5 +1,6 @@
 import { useState } from "react";
 import facade from "../apiFacade";
+import { URL } from "../apiFacade";
 
 function CreateConference() {
   const [conference, setConference] = useState({
@@ -14,7 +15,7 @@ function CreateConference() {
     evt.preventDefault();
 
     fetch(
-      "http://localhost:8080/ExamProject/api/conference/create",
+      URL + "/api/conference/create",
       facade.makeOptions("POST", true, conference)
     ).then((Response) => Response.json());
   };
